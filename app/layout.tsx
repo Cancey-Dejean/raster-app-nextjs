@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { rasterNeue } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${rasterNeue.variable}`}>
+        <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
