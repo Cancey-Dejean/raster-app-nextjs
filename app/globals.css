@@ -9,6 +9,8 @@
     --color-gray-300: 240 5% 84%;
     --color-gray-500: 240 4% 46%;
     --color-red-500: 344 100% 59%;
+    --color-yellow-500: 43 100% 50%;
+    --color-purple-500: 271 91% 65%;
 
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -80,4 +82,20 @@
   section {
     @apply px-8 py-24;
   }
+}
+
+@layer utilities {
+  @keyframes dash {
+    100% {
+      stroke-dashoffset: 100;
+    }
+  }
+
+  .dash-strokes {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    animation: dash 5s linear infinite;
+  }
+
+  /* Figma Icon Styles */
 }

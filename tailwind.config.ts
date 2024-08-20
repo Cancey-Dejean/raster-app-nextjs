@@ -27,6 +27,12 @@ const config = {
       red: {
         DEFAULT: "hsl(var(--color-red-500) / <alpha-value>)",
       },
+      yellow: {
+        500: "hsl(var(--color-yellow-500) / <alpha-value>)",
+      },
+      purple: {
+        500: "hsl(var(--color-purple-500) / <alpha-value>)",
+      },
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
       ring: "hsl(var(--ring))",
