@@ -13,6 +13,7 @@ export default function Hero() {
               src="/images/product-hunt.svg"
               alt="Raster - Next-gen, AI-powered digital asset manager for modern teams | Product Hunt"
               fill
+              sizes="(max-width: 200px) 100vw, 200px"
               priority
               className="object-contain"
             />
@@ -42,6 +43,7 @@ export default function Hero() {
             src="/images/hero-img.png"
             alt="Raster - Next-gen, AI-powered digital asset manager for modern teams | Product Hunt"
             fill
+            sizes="(max-width: 516px) 100vw, 516px"
             priority
             className="object-contain"
           />
