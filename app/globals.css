@@ -4,6 +4,12 @@
 
 @layer base {
   :root {
+    --color-black: 0 0% 0%;
+    --color-white: 0 0% 100%;
+    --color-gray-300: 240 5% 84%;
+    --color-gray-500: 240 4% 46%;
+    --color-red-500: 344 100% 59%;
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -64,6 +70,14 @@
     @apply border-border;
   }
   body {
-    @apply font-raster bg-black text-white;
+    @apply bg-black font-raster text-gray;
+  }
+
+  a {
+    @apply inline-block transition-all duration-300 ease-in-out;
+  }
+
+  section {
+    @apply px-8 py-24;
   }
 }

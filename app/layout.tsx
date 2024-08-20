@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={`${rasterNeue.variable}`}>
         <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
           <Header />
-          {children}
+          <main>{children}</main>
           <Footer />
         </div>
       </body>
