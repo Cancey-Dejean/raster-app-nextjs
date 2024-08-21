@@ -11,6 +11,8 @@
     --color-red-500: 344 100% 59%;
     --color-yellow-500: 43 100% 50%;
     --color-purple-500: 271 91% 65%;
+    --color-green-400: 142 69% 58%;
+    --color-green-500: 142 71% 45%;
 
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -91,10 +93,22 @@
     }
   }
 
+  @keyframes ping {
+    75%,
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
   .dash-strokes {
     stroke-dasharray: 5;
     stroke-dashoffset: 0;
     animation: dash 5s linear infinite;
+  }
+
+  .animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
 
   /* Figma Icon Styles */

@@ -1,4 +1,4 @@
-import { CtaButton, LinkItem } from "@/types";
+import { ButtonItem, CtaButton, LinkItem } from "@/types";
 
 export const navItems: LinkItem[] = [
   { label: "Changelog", url: "/changelog", newTab: false },
@@ -63,5 +63,15 @@ export const companies = [
     url: "https://gohealthuc.com/",
     image: "/images/go-health.svg",
     alt: "Go Health",
+  },
+];
+
+export const buttons = [
+  {
+    label: "Get started for free",
+    url: "/#get-started",
+    newTab: true,
+    variant: "ghost",
+    size: "default",
   },
 ];

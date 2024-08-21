@@ -3,6 +3,7 @@ import Card from "..";
 import { DashedS, Stars } from "../../svgIcons";
 import Link from "next/link";
 import TextPill from "../../comingSoon";
+import { PillText } from "@/types";
 
 export const cardIcons = {
   dashedS: <DashedS />,
@@ -35,7 +36,7 @@ export default function CardBase({
   heading?: string;
   headingHighlightColor?: keyof typeof theme;
   highlightText?: string;
-  pillText?: string;
+  pillText?: PillText["text"];
 }) {
   return (
     <Card className={cn("gap-6")}>

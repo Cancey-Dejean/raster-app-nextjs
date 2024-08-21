@@ -3,14 +3,7 @@ import Container from "../ui/container";
 import CardImage from "../ui/card/cardImage";
 import CardFeaturedGrid from "../ui/card/cardFeaturedGrid";
 import CardBase from "../ui/card/cardBase";
-const featuredGridItems = [
-  {
-    icon: "cursor",
-    title: "Realtime collaboration",
-    url: "/#palette",
-    commingSoon: true,
-  },
-];
+
 export default function SectionGrid() {
   return (
     <section>

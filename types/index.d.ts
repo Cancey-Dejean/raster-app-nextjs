@@ -4,6 +4,8 @@ export type LinkItem = {
   newTab?: boolean;
 };
 
+export type ButtonItem = ButtonProps & LinkItem;
+
 export type CtaButton = LinkItem & {
   cta: boolean;
 };
@@ -22,4 +24,9 @@ export type FeaturedGridItems = {
   comingSoon?: boolean;
   url?: string;
   newTab?: boolean;
+};
+
+export type PillText = {
+  text: string;
+  className?: string;
 };
