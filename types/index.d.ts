@@ -14,3 +14,12 @@ export type ImageCard = {
   image?: string;
   size?: CardSize;
 };
+
+export type FeaturedGridItems = {
+  icon?: keyof typeof featureIcons;
+  title?: string;
+  titleIcon?: keyof typeof titleIcons;
+  comingSoon?: boolean;
+  url?: string;
+  newTab?: boolean;
+};

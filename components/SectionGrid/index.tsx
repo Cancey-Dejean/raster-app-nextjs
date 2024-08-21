@@ -1,12 +1,16 @@
 import { twMerge } from "tailwind-merge";
-import Card from "../ui/card";
 import Container from "../ui/container";
 import CardImage from "../ui/card/cardImage";
 import CardFeaturedGrid from "../ui/card/cardFeaturedGrid";
-import { cardSizes } from "@/constants";
-import { ImageCard } from "@/types";
 import CardBase from "../ui/card/cardBase";
-
+const featuredGridItems = [
+  {
+    icon: "cursor",
+    title: "Realtime collaboration",
+    url: "/#palette",
+    commingSoon: true,
+  },
+];
 export default function SectionGrid() {
   return (
     <section>
@@ -52,9 +56,9 @@ export default function SectionGrid() {
 
           <div className="col-span-1 col-start-1">
             <CardBase
-              reverse
+              pillText="Shipping August 2023"
               heading="Deploy once. Ship forever."
-              description="Deploy a unique Raster image URL and edit the image in post — even after it’s been shipped."
+              description="Deploy a unique Raster image URL and edit the image in post — even after it's been shipped."
             />
           </div>
 
