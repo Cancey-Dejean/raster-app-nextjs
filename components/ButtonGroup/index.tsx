@@ -9,9 +9,7 @@ export default function ButtonGroup({
   buttons?: ButtonItem[];
 }) {
   return (
-    <>
-      {buttons && (
-        <div className="flex items-center gap-5">
+    <div className="flex items-center gap-5">
           {buttons.map(({ label, url, newTab, variant, size }, index) => (
             <Button asChild variant={variant} size={size} key={index}>
               <Link
@@ -24,7 +22,5 @@ export default function ButtonGroup({
             </Button>
           ))}
         </div>
-      )}
-    </>
   );
 }
